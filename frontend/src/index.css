@@ -11,3 +11,49 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.btn
+{
+  background-color: #556CD6;
+  width : 20%;
+  margin : 0 auto;
+  font-size: 1.2em;
+}
+.media
+{
+  width:90%;
+}
+.ecosystem,.Education
+{
+  width:85%;
+}
+a
+{
+   text-decoration: none;
+}
+.logo
+{
+  width:37%;
+}
+.navbar
+{
+  background-color:#fff ;
+}
+
+.nav-link
+{
+  margin-left: 40px;
+}
+
+form
+{
+  margin-left:200px;
+}
+.footer-para
+{
+  font-size: 12px;
+}
+footer a
+{
+  text-decoration: none;
+}

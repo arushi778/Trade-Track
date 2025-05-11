@@ -10,7 +10,7 @@ function Hero()
               <p>
                 Access stocks, mutual funds, ETFs, bonds, and derivatives from one seamless platform.
               </p>
-              <button className = 'btn btn-primary mb-5'>Signup Now</button>
+              <button className = 'btn btn-primary mb-5'>Sign up Now</button>
            </div>
         </div>
     );
