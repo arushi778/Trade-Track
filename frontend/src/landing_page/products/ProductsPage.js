@@ -32,7 +32,7 @@ function ProductsPage() {
         appStore=""
       />
       <RightSection
-        imageUrl="media/images/console.png"
+        imageUrl="media/images/kiteconnect.png"
         productName="Sentinel"
         productDescription="Sentinel is your smart trading alert system. Set powerful, condition-based market alerts that work across stocks, derivatives, and mutual funds. Receive real-time notifications and stay informed without constantly tracking the markets."
         learnMore=""
@@ -45,12 +45,6 @@ function ProductsPage() {
         learnMore=""
         googlePlay=""
         appStore=""
-      />
-      <RightSection
-        imageUrl="media/images/console.png"
-        productName="Trackr"
-        productDescription="Trackr helps you monitor your trading habits and performance with precision. Use intelligent summaries, risk profiling, and trade journaling features to learn from your past decisions and make smarter moves going forward."
-        learnMore=""
       />
     </>
   );

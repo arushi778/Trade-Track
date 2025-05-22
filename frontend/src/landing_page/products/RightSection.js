@@ -4,10 +4,7 @@ function RightFunction({
   imageUrl,
   productName,
   productDescription,
-  tryDemo,
   learnMore,
-  googlePlay,
-  appStore,
 }) {
   return (
     <div className="container mt-5">
