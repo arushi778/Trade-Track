@@ -76,3 +76,34 @@ ul{
   line-height: 1.8;
   font-size:14px;
 }
+
+#supportHero
+{
+  background-color: #556CD6;
+  color:#fff;
+}
+#supportHero a
+{
+  color:white;
+  text-decoration: underline;
+}
+
+#supportWrapper
+{
+  display: flex;
+  justify-content: space-between;
+  margin:0 150px;
+}
+#supportHero input
+{
+  padding: 20px 50px;
+  width: 90%;
+  height:20%;
+  font-size: 20px;
+  border-radius: 10px;
+  border: none;
+}
+#search
+{
+  width:800px;
+}
