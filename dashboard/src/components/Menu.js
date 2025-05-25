@@ -3,14 +3,15 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 const Menu = () => {
-  const [selectMenu, setSelectMenu] = useState(0);
-  const [setProfileDropdownOpen, setIsProfileDropdownOpen ] = useState(false);
+  const [selectedMenu, setSelectedMenu] = useState(0);
+  const [isProfileDropdownOpen, setIsProfileDropdownOpen] = useState(false);
 
   const handleMenuClick = (index) => {
-    setSelectMenu(index);
+    setSelectedMenu(index);
   };
-  const handleProfileClick = (isProfileDropdownOpen) => {
-    setProfileDropdownOpen(!isProfileDropdownOpen);
+
+  const handleProfileClick = (index) => {
+    setIsProfileDropdownOpen(!isProfileDropdownOpen);
   };
 
   const menuClass = "menu";
@@ -21,31 +22,61 @@ const Menu = () => {
       <img src="logo.png" style={{ width: "50px" }} />
       <div className="menus">
         <ul>
-          <Link to="/" onClick = {()=>handleMenuClick(0)}>
-            <li>
-              <p className={selectMenu===0 ? activeMenuClass : menuClass}>Dashboard</p>
-            </li>
-          </Link>
-         <Link to="/orders" onClick = {()=>handleMenuClick(1)}>
-            <li>
-              <p className={selectMenu===1 ? activeMenuClass : menuClass}>Orders</p>
-            </li>
-          </Link>
-          <Link to="/holdings" onClick = {()=>handleMenuClick(2)}>
-            <li>
-              <p className={selectMenu===2 ? activeMenuClass : menuClass}>Holdings</p>
-            </li>
-          </Link>
-          <Link to="/positions" onClick = {()=>handleMenuClick(3)}>
-            <li>
-              <p className={selectMenu===3 ? activeMenuClass : menuClass}>Positions</p>
-            </li>
-          </Link>
-          <Link to="/funds" onClick = {()=>handleMenuClick(4)}>
-            <li>
-              <p className={selectMenu===4 ? activeMenuClass : menuClass}>Funds</p>
-            </li>
-          </Link>
+          <li>
+            <Link
+              style={{ textDecoration: "none" }}
+              to="/"
+              onClick={() => handleMenuClick(0)}
+            >
+              <p className={selectedMenu === 0 ? activeMenuClass : menuClass}>
+                Dashboard
+              </p>
+            </Link>
+          </li>
+          <li>
+            <Link
+              style={{ textDecoration: "none" }}
+              to="/orders"
+              onClick={() => handleMenuClick(1)}
+            >
+              <p className={selectedMenu === 1 ? activeMenuClass : menuClass}>
+                Orders
+              </p>
+            </Link>
+          </li>
+          <li>
+            <Link
+              style={{ textDecoration: "none" }}
+              to="/holdings"
+              onClick={() => handleMenuClick(2)}
+            >
+              <p className={selectedMenu === 2 ? activeMenuClass : menuClass}>
+                Holdings
+              </p>
+            </Link>
+          </li>
+          <li>
+            <Link
+              style={{ textDecoration: "none" }}
+              to="/positions"
+              onClick={() => handleMenuClick(3)}
+            >
+              <p className={selectedMenu === 3 ? activeMenuClass : menuClass}>
+                Positions
+              </p>
+            </Link>
+          </li>
+          <li>
+            <Link
+              style={{ textDecoration: "none" }}
+              to="funds"
+              onClick={() => handleMenuClick(4)}
+            >
+              <p className={selectedMenu === 4 ? activeMenuClass : menuClass}>
+                Funds
+              </p>
+            </Link>
+          </li>
         </ul>
         <hr />
         <div className="profile" onClick={handleProfileClick}>
